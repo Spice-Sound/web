@@ -1,0 +1,251 @@
+body{
+    background-color: rgb(144, 12, 63);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Mostrar el menú desplegable al pasar el ratón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Logo a la derecha */
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* TITULO TITULO TITULO */
+
+.titulocont{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.titulo{
+    width: 50%;
+    color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: bold;
+
+    background-image: url("../multimedia/2000px-Flag_of_Peru_1825_-_1950.svg_.png");
+    background-size: 100%;
+    background-position-y:center ;
+
+    background-clip: text;
+}
+
+
+
+/* TOPS TOPS TOPS TOPS */
+
+.top1 {
+    background-image: url(./artistas/tongowallpaper.jpeg);
+    background-size: 100%;
+    background-position: 4% 30%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+
+}
+
+.top2 {
+    background-image: url(./artistas/wendysulcawallpaper.jpg);
+    background-size: 100%;
+    background-position: 4% 30%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+
+.top3 {
+    background-image: url(./artistas/jazewallpaper.webp);
+    background-size: 100%;
+    background-position: 10% 30%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.top4 {
+    background-image: url(./artistas/giancarloswallpaper.avif);
+    background-size: 100%;
+    background-position: 4% ;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+
+.top5 {
+    background-image: url(./artistas/faraonwallpaper.jpg);
+    background-size: 100%;
+    background-position: 75% 20%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.top6 {
+    background-image: url(./artistas/pedrosuarezwallpaper.webp);
+    background-size: 100%;    
+    background-position: 50% 20%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+
+.top7 {
+    background-image: url(./artistas/marcelomottawallpaper.jpg);
+    background-size: 100%;    
+    background-position: 50% 20%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.top8 {
+    background-image: url(./artistas/alvarorodwallpaper.jpg);
+    background-size: 100%;    
+    background-position: 50% 20%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+
+.top9 {
+    background-image: url(./artistas/chabucawallpaper.jpg);
+    background-size: 100%;    
+    background-position: 50% 20%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.top10 {
+    background-image: url(./artistas/leslieshwawallpaper.jpg);
+    background-size: 100%;    
+    background-position: 50% 40%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+
+
+/* FOTOS DE LOS TOPS */
+
+.icon {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.puesto{
+    display: flex;
+    justify-content: center;
+    color: rgb(144, 12, 63);
+    font-size: 80px;
+    float: right;
+    text-align: center;
+    opacity: 50%;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-bottom: 50px;
+}
+
+footer{
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
