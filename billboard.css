@@ -1,0 +1,178 @@
+body{
+    background-color: rgb(144, 12, 63);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Mostrar el menú desplegable al pasar el ratón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Logo a la derecha */
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* BANDERAS BANDERAS BANDERAS BANDERAS BANDERAS */
+
+
+.flags {
+    display: flex;
+    float: left;
+    perspective: 1000px;
+    margin-top: 20px;
+    margin-left: 6%;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px #000;
+    box-sizing: border-box;
+}
+
+.front {
+    background-color: #333;
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.back h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 15px; /* Agrega margen interno para centrar el texto */
+}
+
+.back .link {
+    border-top: solid 1px #fff;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 15px; /* Ajuste para el padding interno */
+}
+
+.back .link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-bottom: 50px;
+}
+
+footer{
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 15%;
+}
